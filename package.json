@@ -1,0 +1,31 @@
+{
+  "name": "typora-dark-night-sky",
+  "version": "0.0.1",
+  "description": "A dark theme for Typora.",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w src/test.scss -o test/theme/",
+    "serve": "browser-sync start --port 3005 --startPath 'test/html' --server --files '**/*.css, **/*.html, **/*.js'",
+    "go": "npm run scss | npm run serve",
+    "dns-css": "node-sass --source-comments src/dark-night-sky.scss -o dist/",
+    "code-css": "node-sass src/_codeblock.scss -o dist/dark-night-sky/",
+    "mermaid": "node-sass src/_mermaid.scss -o dist/dark-night-sky/",
+    "sm-css": "node-sass src/_sourcemode.scss -o dist/dark-night-sky/",
+    "build": "npm run dns-css | npm run code-css | npm run mermaid | npm run sm-css",
+    "zip": "cd dist && zip -r dark-night-sky.zip dark-night-sky.css dark-night-sky/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obscuredetour/typora-dark-night-sky.git"
+  },
+  "keywords": [],
+  "author": "Jeffrey Summers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/obscuredetour/typora-dark-night-sky/issues"
+  },
+  "homepage": "https://github.com/obscuredetour/typora-dark-night-sky#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

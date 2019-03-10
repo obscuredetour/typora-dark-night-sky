@@ -1,0 +1,11 @@
+/* Dark Night Sky theme for Typora */
+/* Jeffrey Summers https://github.com/obscuredetour/typora-dark-night-sky */
+/* Jeffrey Summers https://github.com/obscuredetour/typora-dark-night-sky */
+/* Jeffrey Summers https://github.com/obscuredetour/typora-dark-night-sky */
+@import url(dark-night-sky/_mermaid.css);
+@import url(dark-night-sky/_codeblock.css);
+@import url(dark-night-sky/_sourcemode.css);
+/* line 17, src/dark-night-sky.scss */
+#write {
+  /* max-width: 914px; default */
+  max-width: 45rem; }

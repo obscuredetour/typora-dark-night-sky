@@ -1,0 +1,119 @@
+// Code color syntax adapated from New Moon (url)
+// by Jeffrey Summers obscuredetour
+
+@charset "UTF-8";
+/* CSS Document */
+
+/** code highlight */
+
+.cm-s-inner .cm-variable {
+    color: #f2777a;
+}
+
+.cm-s-inner .cm-operator,
+.cm-s-inner .cm-property {
+    color: #ac8d58;
+}
+
+.cm-s-inner .cm-keyword {
+    color: #ffeea6;
+}
+
+.cm-s-inner .cm-tag {
+    color: #6AB0F3;
+}
+
+.cm-s-inner .cm-attribute {
+    color: #ffd479;
+}
+
+.CodeMirror div.CodeMirror-cursor {
+    border-left: 1px solid #b8bfc6;
+    z-index: 3;
+}
+
+.cm-s-inner .cm-string {
+    color: #92d192;
+}
+
+.cm-s-inner .cm-comment,
+.cm-s-inner.cm-comment {
+    color: #777c85;
+}
+
+.cm-s-inner .cm-header,
+.cm-s-inner .cm-def,
+.cm-s-inner.cm-header,
+.cm-s-inner.cm-def {
+    color: #b3b9c5;
+}
+
+.cm-s-inner .cm-quote,
+.cm-s-inner.cm-quote {
+    color: #ac8d58;
+}
+
+.cm-s-inner .cm-hr {
+    color: #d8d5d5;
+}
+
+.cm-s-inner .cm-link {
+    color: #d3d3ef;
+}
+
+.cm-s-inner .cm-negative {
+    color: #ac8d58;
+}
+
+.cm-s-inner .cm-positive {
+    color: #ac8d58;
+}
+
+.cm-s-inner .cm-string-2 {
+    color: #92d192;
+}
+
+.cm-s-inner .cm-meta,
+.cm-s-inner .cm-qualifier {
+    color: #777c85;
+}
+
+.cm-s-inner .cm-builtin {
+    color: #e1a6f2;
+}
+
+.cm-s-inner .cm-bracket {
+    color: #ac8d58;
+}
+
+.cm-s-inner .cm-atom,
+.cm-s-inner.cm-atom {
+    color: #6AB0F3;
+}
+
+.cm-s-inner .cm-number {
+    color: #fca369;
+}
+
+.cm-s-inner .cm-variable {
+    color: #f2777a;
+}
+
+.cm-s-inner .cm-variable-2 {
+    color: #f2777a;
+}
+
+.cm-s-inner .cm-variable-3 {
+    color: #f2777a;
+}
+
+.CodeMirror-selectedtext,
+.CodeMirror-selected {
+    background: #4a89dc;
+    color: #fff !important;
+    text-shadow: none;
+}
+
+.CodeMirror-gutters {
+    border-right: none;
+}
