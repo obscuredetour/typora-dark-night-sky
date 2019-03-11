@@ -1,11 +1,1048 @@
 /* Dark Night Sky theme for Typora */
 /* Jeffrey Summers https://github.com/obscuredetour/typora-dark-night-sky */
-/* Jeffrey Summers https://github.com/obscuredetour/typora-dark-night-sky */
-/* Jeffrey Summers https://github.com/obscuredetour/typora-dark-night-sky */
+/* DO NOT DELETE THESE LINES */
 @import url(dark-night-sky/_mermaid.css);
 @import url(dark-night-sky/_codeblock.css);
 @import url(dark-night-sky/_sourcemode.css);
-/* line 17, src/dark-night-sky.scss */
+/* ------------------------- */
+/* line 13, src/dark-night-sky.scss */
+:root {
+  --jet: hsl(0, 0%, 12%);
+  --space: hsl(0, 0%, 13%);
+  --raven: hsl(0, 1%, 15%);
+  --asher: hsl(0, 1%, 17%);
+  --aztec: hsl(0, 1%, 20%);
+  --cape-cod: hsl(0, 0%, 23%);
+  --corduroy: hsl(0, 1%, 26%);
+  --mine: hsl(0, 0%, 28%);
+  --mystic: hsl(0, 0%, 38%);
+  --boulder: hsl(0, 0%, 50%);
+  --grey: hsl(0, 0%, 67%);
+  --stone: hsl(0, 0%, 72%);
+  --concrete: hsl(0, 0%, 79%);
+  --zircon: hsl(0, 2%, 91%);
+  --alabaster: hsl(0, 0%, 97%);
+  --bg-color: var(--space);
+  --side-bar-bg-color: #1d1d1d;
+  --text-color: var(--concrete);
+  --select-text-bg-color: #4a89dc;
+  --item-hover-bg-color: #0a0d16;
+  --control-text-color: var(--stone);
+  --control-text-hover-color: var(--zircon);
+  --window-border: 1px solid hsl(0, 0%, 33%);
+  --active-file-bg-color: var(--cape-cod);
+  --active-file-border-color: var(--select-text-bg-color);
+  --active-file-text-color: white;
+  --item-hover-bg-color: var(--select-text-bg-color);
+  --item-hover-text-color: white;
+  --primary-color: #6dc1e7;
+  --rawblock-edit-panel-bd: #4B535A; }
+
+/* line 65, src/dark-night-sky.scss */
 #write {
-  /* max-width: 914px; default */
   max-width: 45rem; }
+  @media (min-width: 1260px) {
+    /* line 65, src/dark-night-sky.scss */
+    #write {
+      max-width: 1024px; } }
+
+/* line 73, src/dark-night-sky.scss */
+.typora-fullscreen #write {
+  max-width: 100%; }
+  /* line 75, src/dark-night-sky.scss */
+  .typora-fullscreen #write p {
+    max-width: 100%; }
+
+/* line 81, src/dark-night-sky.scss */
+html {
+  font-size: 1rem; }
+
+/* line 85, src/dark-night-sky.scss */
+html,
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background: var(--bg-color);
+  fill: currentColor; }
+
+/* line 97, src/dark-night-sky.scss */
+html,
+body,
+button,
+input,
+select,
+textarea,
+div.code-tooltip-content {
+  color: var(--text-color);
+  border-color: transparent; }
+
+/* line 108, src/dark-night-sky.scss */
+div.code-tooltip,
+.md-hover-tip .md-arrow:after {
+  background: #4B535A; }
+
+/* line 113, src/dark-night-sky.scss */
+.popover.bottom > .arrow:after {
+  border-bottom-color: #4B535A; }
+
+/* line 117, src/dark-night-sky.scss */
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-style: normal;
+  line-height: 1.625rem;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif; }
+
+/* line 128, src/dark-night-sky.scss */
+hr {
+  height: 2px;
+  border: 0;
+  margin: 24px 0 !important; }
+
+/* line 134, src/dark-night-sky.scss */
+p {
+  max-width: 40rem; }
+  @media (min-width: 1260px) {
+    /* line 134, src/dark-night-sky.scss */
+    p {
+      max-width: unset; } }
+
+/* line 142, src/dark-night-sky.scss */
+p ~ ul,
+h1 ~ ul,
+h2 ~ ul,
+h3 ~ ul,
+h4 ~ ul,
+h5 ~ ul,
+h6 ~ ul {
+  margin-top: -1rem; }
+
+/* line 152, src/dark-night-sky.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  clear: both;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  margin: 0;
+  max-width: 40rem;
+  padding: 0;
+  color: var(--zircon); }
+  @media (min-width: 1260px) {
+    /* line 152, src/dark-night-sky.scss */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      max-width: unset; } }
+
+/* line 173, src/dark-night-sky.scss */
+h1 {
+  color: var(--alabaster);
+  font-size: 2.125rem;
+  /* 34px */
+  line-height: 1.1;
+  margin-bottom: 1.5rem; }
+
+/* line 181, src/dark-night-sky.scss */
+h2 {
+  font-size: 1.625rem;
+  /* 28px */
+  margin-bottom: 1.3125rem;
+  margin-top: 2rem !important;
+  /* 24px */
+  letter-spacing: .2px; }
+
+/* line 190, src/dark-night-sky.scss */
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600; }
+
+/* line 197, src/dark-night-sky.scss */
+h3 {
+  font-size: 1.3125rem;
+  /* 21px */
+  margin-bottom: 1.25rem;
+  /* 24px */
+  letter-spacing: .1px; }
+
+/* line 205, src/dark-night-sky.scss */
+h4 {
+  font-size: 1.125rem;
+  /* 19px */ }
+
+/* line 210, src/dark-night-sky.scss */
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem; }
+
+/* line 216, src/dark-night-sky.scss */
+h5 {
+  font-size: 1.0625rem;
+  /* 17px */
+  line-height: 1.25rem;
+  /* 22px */ }
+
+/* line 223, src/dark-night-sky.scss */
+h6 {
+  font-size: 1rem;
+  /* 16px */ }
+
+@media (min-width: 980px) {
+  /* line 230, src/dark-night-sky.scss */
+  h3.md-focus:before,
+  h4.md-focus:before,
+  h5.md-focus:before,
+  h6.md-focus:before {
+    color: #ddd;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    position: absolute;
+    left: -1.642857143rem;
+    top: .357142857rem;
+    float: left;
+    font-size: 9px;
+    padding-left: 2px;
+    padding-right: 2px;
+    vertical-align: bottom;
+    font-weight: normal;
+    line-height: normal; }
+  /* line 249, src/dark-night-sky.scss */
+  h3.md-focus:before {
+    content: 'h3'; }
+  /* line 253, src/dark-night-sky.scss */
+  h4.md-focus:before {
+    content: 'h4'; }
+  /* line 257, src/dark-night-sky.scss */
+  h5.md-focus:before {
+    content: 'h5';
+    top: 0px; }
+  /* line 262, src/dark-night-sky.scss */
+  h6.md-focus:before {
+    content: 'h6';
+    top: 0px; } }
+
+/* line 268, src/dark-night-sky.scss */
+a {
+  text-decoration: none;
+  outline: 0; }
+
+/* line 273, src/dark-night-sky.scss */
+a:hover {
+  outline: 0; }
+
+/* line 277, src/dark-night-sky.scss */
+a:focus {
+  outline: thin dotted; }
+
+/* line 281, src/dark-night-sky.scss */
+sup.md-footnote {
+  background-color: #555;
+  color: #ddd; }
+
+/* line 286, src/dark-night-sky.scss */
+p {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word; }
+
+/* line 291, src/dark-night-sky.scss */
+p,
+ul,
+dd,
+ol,
+hr,
+address,
+pre,
+table,
+iframe,
+.wp-caption,
+.wp-audio-shortcode,
+.wp-video-shortcode {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  /* 24px */ }
+
+/* line 308, src/dark-night-sky.scss */
+li > blockquote {
+  margin-bottom: 0; }
+
+/* line 312, src/dark-night-sky.scss */
+audio:not([controls]) {
+  display: none; }
+
+/* line 316, src/dark-night-sky.scss */
+[hidden] {
+  display: none; }
+
+/* line 320, src/dark-night-sky.scss */
+::-moz-selection {
+  background: #4a89dc;
+  color: #fff;
+  text-shadow: none; }
+
+/* line 326, src/dark-night-sky.scss */
+*.in-text-selection,
+::selection {
+  background: #4a89dc;
+  color: #fff;
+  text-shadow: none; }
+
+/* line 333, src/dark-night-sky.scss */
+ul,
+ol {
+  padding: 0 0 0 1.875rem;
+  /* 30px */ }
+
+/* ul {
+    list-style: circle;
+} */
+/* line 343, src/dark-night-sky.scss */
+ol {
+  list-style: decimal; }
+
+/* line 347, src/dark-night-sky.scss */
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin: 0; }
+
+/* line 354, src/dark-night-sky.scss */
+b,
+th,
+dt,
+strong {
+  font-weight: bold; }
+
+/* line 361, src/dark-night-sky.scss */
+i,
+em,
+dfn,
+cite {
+  font-style: italic; }
+
+/* line 368, src/dark-night-sky.scss */
+blockquote {
+  border-radius: 6px;
+  border-left: solid 6px var(--corduroy);
+  background-color: var(--asher);
+  color: var(--grey);
+  padding: 1.5rem 1rem 1.5rem 2rem;
+  margin: 2rem 0;
+  position: relative; }
+
+/* line 378, src/dark-night-sky.scss */
+blockquote:before,
+blockquote:after {
+  font-family: Arial, sans-serif;
+  color: var(--select-text-bg-color);
+  font-size: 2.25rem;
+  position: absolute; }
+
+/* line 386, src/dark-night-sky.scss */
+blockquote:before {
+  content: "\201C";
+  left: 0.75rem;
+  top: 1rem; }
+
+/* line 392, src/dark-night-sky.scss */
+blockquote:after {
+  content: "\201D";
+  right: 1rem;
+  bottom: -0.25rem; }
+
+/* line 398, src/dark-night-sky.scss */
+pre,
+code,
+kbd,
+tt,
+var {
+  font-size: 0.875rem;
+  background-color: var(--jet);
+  border: 1px solid #8080803d;
+  border-radius: 3px;
+  font-family: "SFMono-Regular", "Hasklig", "Source Code Pro", "Fira Code", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  color: var(--text-color);
+  padding: 2px 4px; }
+
+/* line 412, src/dark-night-sky.scss */
+kbd {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #fff;
+  background-color: #333;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25); }
+
+/* line 421, src/dark-night-sky.scss */
+pre.md-fences {
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  border: 1px solid #8080803d;
+  background-color: #1d1d1d;
+  border-radius: 4px; }
+
+/* line 429, src/dark-night-sky.scss */
+.cm-s-inner .cm-comment,
+.cm-s-inner.cm-comment {
+  color: #555; }
+
+/* line 434, src/dark-night-sky.scss */
+.md-fences .code-tooltip {
+  bottom: -3.2em; }
+
+/* line 438, src/dark-night-sky.scss */
+.enable-diagrams pre.md-fences[lang="sequence"] .code-tooltip,
+.enable-diagrams pre.md-fences[lang="flow"] .code-tooltip,
+.enable-diagrams pre.md-fences[lang="mermaid"] .code-tooltip {
+  bottom: -2.2em;
+  right: 4px; }
+
+/* line 445, src/dark-night-sky.scss */
+code,
+kbd,
+tt,
+var {
+  padding: 2px 5px; }
+
+/* line 452, src/dark-night-sky.scss */
+table {
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Dark Night tables */
+/* line 460, src/dark-night-sky.scss */
+table thead tr > th {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: var(--mine);
+  border-right: 2px solid var(--mine); }
+
+/* line 469, src/dark-night-sky.scss */
+table tbody tr:nth-child(even) {
+  background-color: #2b2b2b; }
+
+/* line 473, src/dark-night-sky.scss */
+.md-table-fig {
+  border: 2px solid var(--mine);
+  border-radius: 4px; }
+
+/* line 478, src/dark-night-sky.scss */
+th,
+td {
+  padding: 5px 10px;
+  vertical-align: top; }
+
+/* line 484, src/dark-night-sky.scss */
+a {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+
+/* line 489, src/dark-night-sky.scss */
+hr {
+  background: var(--corduroy);
+  border: 0;
+  border-top: solid 1px var(--corduroy);
+  border-bottom: solid 1px var(--corduroy);
+  border-radius: 8px;
+  margin: 2rem auto 1rem auto;
+  width: 100%; }
+
+/* line 499, src/dark-night-sky.scss */
+h1 {
+  margin-top: 2em; }
+
+/* line 503, src/dark-night-sky.scss */
+a {
+  color: #9cbadd;
+  text-decoration: none;
+  transition: 0.3s all ease-in-out; }
+
+/* line 509, src/dark-night-sky.scss */
+a:hover {
+  color: #76a0d0;
+  text-decoration: underline;
+  transition: 0.3s all ease-in-out; }
+
+/* line 515, src/dark-night-sky.scss */
+.md-inline-math script {
+  color: #81b1db; }
+
+/* line 519, src/dark-night-sky.scss */
+b,
+th,
+dt,
+strong {
+  color: #DEDEDE; }
+
+/* line 526, src/dark-night-sky.scss */
+mark {
+  background: #D3D40E; }
+
+/* line 530, src/dark-night-sky.scss */
+th,
+td {
+  border: 0;
+  /* variable */ }
+
+/* line 536, src/dark-night-sky.scss */
+.task-list {
+  padding-left: 0; }
+
+/* line 540, src/dark-night-sky.scss */
+.md-task-list-item {
+  padding-left: 1.25rem; }
+
+/* line 544, src/dark-night-sky.scss */
+.md-task-list-item > input {
+  top: auto; }
+
+/* line 548, src/dark-night-sky.scss */
+input[type=checkbox]:focus {
+  border-color: transparent; }
+
+/* line 552, src/dark-night-sky.scss */
+.md-task-list-item > input:before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: #525252;
+  margin: -0.5rem 0 0 -0.5rem; }
+
+/* line 565, src/dark-night-sky.scss */
+.md-task-list-item > input:checked:before,
+.md-task-list-item > input[checked]:before {
+  content: '\221A';
+  font-size: 1rem;
+  line-height: 0.625rem;
+  color: #fff;
+  font-weight: bolder; }
+
+/* line 574, src/dark-night-sky.scss */
+.CodeMirror-gutters {
+  background: transparent;
+  border-right: 1px solid transparent; }
+
+/** quick open **/
+/* line 580, src/dark-night-sky.scss */
+.auto-suggest-container {
+  border: 0px;
+  background-color: #525C65; }
+
+/* line 585, src/dark-night-sky.scss */
+#typora-quick-open {
+  background-color: #525C65; }
+
+/* line 589, src/dark-night-sky.scss */
+#typora-quick-open input {
+  background-color: #525C65;
+  border: 0;
+  border-bottom: 1px solid grey; }
+
+/* line 595, src/dark-night-sky.scss */
+.typora-quick-open-item {
+  background-color: inherit;
+  color: inherit; }
+
+/* line 600, src/dark-night-sky.scss */
+.typora-quick-open-item.active,
+.typora-quick-open-item:hover {
+  background-color: #4D8BDB;
+  color: white; }
+
+/* line 606, src/dark-night-sky.scss */
+.typora-quick-open-item:hover {
+  background-color: rgba(77, 139, 219, 0.8); }
+
+/* line 610, src/dark-night-sky.scss */
+.typora-search-spinner > div {
+  background-color: #fff; }
+
+/* line 614, src/dark-night-sky.scss */
+#write pre.md-meta-block {
+  border: 0;
+  background: var(--asher);
+  color: var(--grey);
+  border-radius: 4px;
+  padding: 1rem;
+  line-height: 1.6em; }
+
+/* line 623, src/dark-night-sky.scss */
+.btn,
+.btn .btn-default {
+  background: transparent;
+  color: #b8bfc6; }
+
+/* line 629, src/dark-night-sky.scss */
+.ty-table-edit {
+  border-top: 1px solid gray;
+  background-color: #363B40; }
+
+/* line 634, src/dark-night-sky.scss */
+.popover-title {
+  background: transparent; }
+
+/* line 638, src/dark-night-sky.scss */
+.md-image > .md-meta {
+  color: #BBBBBB;
+  background: transparent; }
+
+/* line 643, src/dark-night-sky.scss */
+.md-expand.md-image > .md-meta {
+  color: #DDD; }
+
+/* line 647, src/dark-night-sky.scss */
+.md-image img {
+  border-radius: 4px; }
+
+/* line 651, src/dark-night-sky.scss */
+#write > h3:before,
+#write > h4:before,
+#write > h5:before,
+#write > h6:before {
+  border: none;
+  border-radius: 0px;
+  color: #888;
+  text-decoration: underline;
+  left: -1.4rem;
+  top: 0.2rem; }
+
+/* line 663, src/dark-night-sky.scss */
+#write > h3.md-focus:before {
+  top: 2px; }
+
+/* line 667, src/dark-night-sky.scss */
+#write > h4.md-focus:before {
+  top: 2px; }
+
+/* line 671, src/dark-night-sky.scss */
+.md-toc-item {
+  color: #A8C2DC; }
+
+/* line 675, src/dark-night-sky.scss */
+#write div.md-toc-tooltip {
+  background-color: #363B40; }
+
+/* line 679, src/dark-night-sky.scss */
+.dropdown-menu .btn:hover,
+.dropdown-menu .btn:focus,
+.md-toc .btn:hover,
+.md-toc .btn:focus {
+  color: white;
+  background: black; }
+
+/* line 687, src/dark-night-sky.scss */
+#toc-dropmenu {
+  background: rgba(50, 54, 59, 0.93);
+  border: 1px solid rgba(253, 253, 253, 0.15); }
+
+/* line 692, src/dark-night-sky.scss */
+#toc-dropmenu .divider {
+  background-color: #9b9b9b; }
+
+/* line 696, src/dark-night-sky.scss */
+.outline-expander:before {
+  top: 2px; }
+
+/* line 700, src/dark-night-sky.scss */
+#typora-sidebar {
+  box-shadow: none;
+  border-right: 1px dashed;
+  border-right: none; }
+
+/* line 706, src/dark-night-sky.scss */
+.sidebar-tabs {
+  border-bottom: 0; }
+
+/* line 710, src/dark-night-sky.scss */
+#typora-sidebar:hover .outline-title-wrapper {
+  border-left: 1px dashed; }
+
+/* line 714, src/dark-night-sky.scss */
+.outline-title-wrapper .btn {
+  color: inherit; }
+
+/* line 718, src/dark-night-sky.scss */
+.outline-item:hover {
+  border-color: #363B40;
+  background-color: #363B40;
+  color: white; }
+
+/* line 724, src/dark-night-sky.scss */
+h1.md-focus .md-attr,
+h2.md-focus .md-attr,
+h3.md-focus .md-attr,
+h4.md-focus .md-attr,
+h5.md-focus .md-attr,
+h6.md-focus .md-attr,
+.md-header-span .md-attr {
+  color: #8C8E92;
+  display: inline; }
+
+/* line 735, src/dark-night-sky.scss */
+.md-comment {
+  color: #5a95e3;
+  opacity: 1; }
+
+/* line 740, src/dark-night-sky.scss */
+.md-inline-math g,
+.md-inline-math svg {
+  stroke: #b8bfc6 !important;
+  fill: #b8bfc6 !important; }
+
+/* line 746, src/dark-night-sky.scss */
+[md-inline='inline_math'] {
+  color: #9CB2E9; }
+
+/* line 750, src/dark-night-sky.scss */
+#math-inline-preview .md-arrow:after {
+  background: black; }
+
+/* line 754, src/dark-night-sky.scss */
+.modal-content {
+  background: var(--bg-color);
+  border: 0; }
+
+/* line 759, src/dark-night-sky.scss */
+.modal-title {
+  font-size: 1.5em; }
+
+/* line 763, src/dark-night-sky.scss */
+.modal-content input {
+  background-color: rgba(26, 21, 21, 0.51);
+  color: white; }
+
+/* line 768, src/dark-night-sky.scss */
+.modal-content .input-group-addon {
+  background-color: rgba(0, 0, 0, 0.17);
+  color: white; }
+
+/* line 773, src/dark-night-sky.scss */
+.modal-backdrop {
+  background-color: rgba(174, 174, 174, 0.7); }
+
+/* line 777, src/dark-night-sky.scss */
+.modal-content .btn-primary {
+  border-color: var(--primary-color); }
+
+/* line 781, src/dark-night-sky.scss */
+.md-table-resize-popover {
+  background-color: #4B535A; }
+
+/* line 785, src/dark-night-sky.scss */
+.form-inline .input-group .input-group-addon {
+  color: white; }
+
+/* line 789, src/dark-night-sky.scss */
+#md-searchpanel {
+  border-bottom: 1px dashed grey; }
+
+/** UI for electron */
+/* line 795, src/dark-night-sky.scss */
+.context-menu,
+#spell-check-panel,
+#footer-word-count-info {
+  background-color: #42464A; }
+
+/* line 801, src/dark-night-sky.scss */
+.context-menu.dropdown-menu .divider,
+.dropdown-menu .divider {
+  background-color: #777777; }
+
+/* line 806, src/dark-night-sky.scss */
+footer {
+  color: inherit; }
+
+/* Dark Night footer */
+/* line 811, src/dark-night-sky.scss */
+.sidebar-footer,
+footer.ty-footer {
+  border-color: transparent !important; }
+
+/* line 816, src/dark-night-sky.scss */
+.file-list-item-file-ext-part {
+  color: var(--boulder);
+  opacity: 1; }
+
+/* @media (min-width: 1100px) {
+    .pin-outline footer.ty-footer {
+        background-color: transparent;
+    }
+} */
+@media (max-width: 1000px) {
+  /* line 829, src/dark-night-sky.scss */
+  footer {
+    border-top-color: transparent;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+  /* line 835, src/dark-night-sky.scss */
+  footer:hover {
+    color: inherit;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; } }
+
+/* line 842, src/dark-night-sky.scss */
+#file-info-file-path .file-info-field-value:hover {
+  background-color: #555;
+  color: #dedede; }
+
+/* line 847, src/dark-night-sky.scss */
+.megamenu-content,
+.megamenu-opened header {
+  background: var(--bg-color); }
+
+/* line 852, src/dark-night-sky.scss */
+.megamenu-menu-panel h2,
+.megamenu-menu-panel h1,
+.long-btn {
+  color: inherit; }
+
+/* line 858, src/dark-night-sky.scss */
+.megamenu-menu-panel input[type='text'] {
+  background: inherit;
+  border: 0;
+  border-bottom: 1px solid; }
+
+/* line 864, src/dark-night-sky.scss */
+#recent-file-panel-action-btn {
+  background: inherit;
+  border: 1px grey solid; }
+
+/* line 869, src/dark-night-sky.scss */
+.megamenu-menu-panel .dropdown-menu > li > a {
+  color: inherit;
+  background-color: #2F353A;
+  text-decoration: none; }
+
+/* line 875, src/dark-night-sky.scss */
+.megamenu-menu-panel table td:nth-child(1) {
+  color: inherit;
+  font-weight: bold; }
+
+/* line 880, src/dark-night-sky.scss */
+.megamenu-menu-panel tbody tr:hover td:nth-child(1) {
+  color: white; }
+
+/* line 884, src/dark-night-sky.scss */
+.modal-footer .btn-default,
+.modal-footer .btn-primary,
+.modal-footer .btn-default:not(:hover) {
+  border: 1px solid;
+  border-color: transparent; }
+
+/* line 891, src/dark-night-sky.scss */
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: white;
+  border: 1px solid #ddd;
+  background-color: inherit; }
+
+/* line 902, src/dark-night-sky.scss */
+.modal-header {
+  border-bottom: 0; }
+
+/* line 906, src/dark-night-sky.scss */
+.modal-footer {
+  border-top: 0; }
+
+/* line 910, src/dark-night-sky.scss */
+#recent-file-panel tbody tr:nth-child(2n-1) {
+  background-color: transparent !important; }
+
+/* line 914, src/dark-night-sky.scss */
+.megamenu-menu-panel tbody tr:hover td:nth-child(2) {
+  color: inherit; }
+
+/* line 918, src/dark-night-sky.scss */
+.megamenu-menu-panel .btn {
+  border: 1px solid #eee;
+  background: transparent; }
+
+/* line 923, src/dark-night-sky.scss */
+.mouse-hover .toolbar-icon.btn:hover,
+#w-full.mouse-hover,
+#w-pin.mouse-hover {
+  background-color: inherit; }
+
+/* line 929, src/dark-night-sky.scss */
+.typora-node::-webkit-scrollbar {
+  width: 5px; }
+
+/* line 933, src/dark-night-sky.scss */
+.typora-node::-webkit-scrollbar-thumb:vertical {
+  background: rgba(250, 250, 250, 0.3); }
+
+/* line 937, src/dark-night-sky.scss */
+.typora-node::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(250, 250, 250, 0.5); }
+
+/* line 941, src/dark-night-sky.scss */
+#w-unpin {
+  background-color: #4182c4; }
+
+/* line 945, src/dark-night-sky.scss */
+#top-titlebar,
+#top-titlebar * {
+  color: var(--item-hover-text-color); }
+
+/* line 950, src/dark-night-sky.scss */
+.typora-sourceview-on #toggle-sourceview-btn,
+#footer-word-count:hover,
+.ty-show-word-count #footer-word-count {
+  background: #333333; }
+
+/* line 956, src/dark-night-sky.scss */
+#toggle-sourceview-btn:hover {
+  color: #eee;
+  background: #333333; }
+
+/** focus mode */
+/* line 962, src/dark-night-sky.scss */
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+  color: #686868 !important; }
+
+/* line 966, src/dark-night-sky.scss */
+.on-focus-mode .md-end-block:not(.md-focus) img,
+.on-focus-mode .md-task-list-item:not(.md-focus-container) > input {
+  opacity: #686868 !important; }
+
+/* line 971, src/dark-night-sky.scss */
+.on-focus-mode li[cid]:not(.md-focus-container) {
+  color: #686868; }
+
+/* line 975, src/dark-night-sky.scss */
+.on-focus-mode .md-fences.md-focus .CodeMirror-code > *:not(.CodeMirror-activeline) *,
+.on-focus-mode .CodeMirror.cm-s-inner:not(.CodeMirror-focused) * {
+  color: #686868 !important; }
+
+/* line 980, src/dark-night-sky.scss */
+.on-focus-mode .md-focus,
+.on-focus-mode .md-focus-container {
+  color: #fff; }
+
+/* line 985, src/dark-night-sky.scss */
+.on-focus-mode #typora-source .CodeMirror-code > *:not(.CodeMirror-activeline) * {
+  color: #686868 !important; }
+
+/*diagrams*/
+/* line 991, src/dark-night-sky.scss */
+#write .md-focus .md-diagram-panel {
+  border: 1px solid #ddd;
+  margin-left: -1px;
+  width: calc(100% + 2px); }
+
+/*diagrams*/
+/* line 998, src/dark-night-sky.scss */
+#write .md-focus.md-fences-with-lineno .md-diagram-panel {
+  margin-left: auto; }
+
+/* line 1002, src/dark-night-sky.scss */
+.md-diagram-panel-error {
+  color: #f1908e; }
+
+/* line 1006, src/dark-night-sky.scss */
+.active-tab-files #info-panel-tab-file,
+.active-tab-files #info-panel-tab-file:hover,
+.active-tab-outline #info-panel-tab-outline,
+.active-tab-outline #info-panel-tab-outline:hover {
+  color: #eee; }
+
+/* Dark Night sidebar modifications */
+/* line 1014, src/dark-night-sky.scss */
+.active-tab-files #info-panel-tab-file,
+.info-panel-tab-title {
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 600; }
+
+/* line 1021, src/dark-night-sky.scss */
+.sidebar-footer-item:hover,
+.footer-item:hover {
+  background: inherit;
+  color: white; }
+
+/* line 1027, src/dark-night-sky.scss */
+.ty-side-sort-btn.active,
+.ty-side-sort-btn:hover,
+.selected-folder-menu-item a:after {
+  color: white; }
+
+/* line 1033, src/dark-night-sky.scss */
+#sidebar-files-menu {
+  border: solid 1px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.79);
+  background-color: var(--bg-color); }
+
+/* line 1039, src/dark-night-sky.scss */
+.file-list-item {
+  border-bottom: none; }
+
+/* line 1043, src/dark-night-sky.scss */
+.file-list-item-summary {
+  opacity: 1; }
+
+/* line 1047, src/dark-night-sky.scss */
+.file-list-item.active:first-child {
+  border-top: none; }
+
+/* line 1051, src/dark-night-sky.scss */
+.file-node-background {
+  height: 32px; }
+
+/* line 1055, src/dark-night-sky.scss */
+.file-library-node.active > .file-node-content,
+.file-list-item.active {
+  color: white;
+  color: var(--active-file-text-color); }
+
+/* line 1061, src/dark-night-sky.scss */
+.file-library-node.active > .file-node-background {
+  background-color: #222222;
+  background-color: var(--active-file-bg-color); }
+
+/* line 1066, src/dark-night-sky.scss */
+.file-list-item.active {
+  background-color: #222222;
+  background-color: var(--active-file-bg-color); }
+
+/* line 1071, src/dark-night-sky.scss */
+#ty-tooltip {
+  background-color: black;
+  color: #eee; }
+
+/* line 1076, src/dark-night-sky.scss */
+.md-task-list-item > input {
+  margin-left: -1.3em;
+  margin-top: calc(1rem - 10px);
+  -webkit-appearance: none; }
+
+/* line 1082, src/dark-night-sky.scss */
+.md-mathjax-midline {
+  background-color: #57616b;
+  border-bottom: none; }

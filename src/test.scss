@@ -1,37 +1,10 @@
 @import "_mermaid";
 @import "_sourcemode";
 @import "_codeblock";
+@import "_variables";
 
-// html {
-//   font-size: 1rem;
-// }
-
-// html,
-// body {
-//   -webkit-text-size-adjust: 100%;
-//   -ms-text-size-adjust: 100%;
-//   background: var(--bg-color);
-//   fill: currentColor;
-// }
-
+$medium: 1024px;
 $large: 1260px;
-
-@mixin medium-down {
-  @media (max-width: #{$large}) {
-    @content;
-  }
-}
-
-
-#write {
-  /* max-width: 914px; default */
-  max-width: 45rem;
-}
-
-// .typora-fullscreen #write {
-//   /* max-width: 914px; default */
-//   max-width: 960px;
-// }
 
 :root {
 
@@ -73,6 +46,37 @@ $large: 1260px;
   --rawblock-edit-panel-bd: #4B535A;
 }
 
+@mixin medium-up {
+  @media (min-width: #{$medium}) {
+    @content;
+  }
+}
+
+@mixin large-up {
+  @media (min-width: #{$large}) {
+    @content;
+  }
+}
+
+#write {
+  max-width: 45rem;
+
+  @include medium-up() {
+    max-width: 1024px;
+  }
+
+  @include large-up() {
+    max-width: 100%;
+  }
+}
+
+// .typora-fullscreen #write {
+//   /* max-width: 914px; default */
+//   max-width: 960px;
+// }
+
+
+
 html {
   font-size: 1rem;
 }
@@ -85,15 +89,9 @@ body {
   fill: currentColor;
 }
 
-#write {
-  /* max-width: 914px; default */
-  max-width: 45rem;
-}
-
-.typora-fullscreen #write {
-  /* max-width: 914px; default */
-  max-width: 960px;
-}
+// .typora-fullscreen #write {
+//   max-width: 960px;
+// }
 
 html,
 body,
@@ -123,7 +121,7 @@ select,
 textarea {
   font-style: normal;
   line-height: 1.625rem;
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: $font-sans;
 }
 
 hr {
@@ -133,7 +131,11 @@ hr {
 }
 
 p {
-  max-width: 40rem
+  max-width: 40rem;
+
+  @include large-up() {
+    max-width: unset;
+  }
 }
 
 p~ul,
@@ -161,6 +163,10 @@ h6 {
   max-width: 40rem;
   padding: 0;
   color: var(--zircon);
+
+  @include large-up() {
+    max-width: unset;
+  }
 }
 
 h1 {

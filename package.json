@@ -6,7 +6,7 @@
   "scripts": {
     "scss": "node-sass -w src/test.scss -o test/theme/",
     "serve": "browser-sync start --port 3005 --startPath 'test/html' --server --files '**/*.css, **/*.html, **/*.js'",
-    "go": "npm run scss | npm run serve",
+    "test": "npm run scss | npm run serve",
     "dns-css": "node-sass --source-comments src/dark-night-sky.scss -o dist/",
     "code-css": "node-sass src/_codeblock.scss -o dist/dark-night-sky/",
     "mermaid": "node-sass src/_mermaid.scss -o dist/dark-night-sky/",

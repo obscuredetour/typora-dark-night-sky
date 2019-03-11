@@ -1,3 +1,4 @@
+/* Colors based on New Moon syntax theme and adapated from default Typora Night theme */
 /* Flowchart variables */
 /* Sequence Diagram variables */
 /* Gantt chart variables */
@@ -11,8 +12,8 @@ g.label {
 .node circle,
 .node ellipse,
 .node polygon {
-  fill: #BDD5EA;
-  stroke: #81B1DB;
+  fill: #9cbadd;
+  stroke: #76a0d0;
   stroke-width: 1px; }
 
 .edgePath .path {
@@ -31,8 +32,8 @@ g.label {
   fill: #F9FFFE; }
 
 .actor {
-  stroke: #81B1DB;
-  fill: #BDD5EA; }
+  stroke: #9cbadd;
+  fill: #76a0d0; }
 
 text.actor {
   fill: black;
@@ -64,8 +65,8 @@ text.actor {
   stroke: none; }
 
 .labelBox {
-  stroke: #81B1DB;
-  fill: #BDD5EA; }
+  stroke: #9cbadd;
+  fill: #76a0d0; }
 
 .labelText {
   fill: #323D47;
@@ -82,7 +83,7 @@ text > tspan {
   stroke-width: 2;
   stroke-dasharray: "2 2";
   marker-end: "url(#arrowhead)";
-  stroke: #81B1DB; }
+  stroke: #9cbadd; }
 
 .note {
   stroke: rgba(255, 255, 255, 0.25);
@@ -103,7 +104,7 @@ text > tspan {
   fill: rgba(255, 255, 255, 0.3); }
 
 .section2 {
-  fill: #EAE8B9; }
+  fill: #bbb; }
 
 .section1,
 .section3 {
@@ -143,7 +144,7 @@ text > tspan {
 /* Today line */
 .today {
   fill: none;
-  stroke: #DB5757;
+  stroke: #f2777a;
   stroke-width: 2px; }
 
 /* Task styling */
@@ -170,14 +171,14 @@ text > tspan {
 .taskText1,
 .taskText2,
 .taskText3 {
-  fill: #323D47; }
+  fill: #2d2d2d; }
 
 .task0,
 .task1,
 .task2,
 .task3 {
-  fill: #BDD5EA;
-  stroke: rgba(255, 255, 255, 0.5); }
+  fill: #6AB0F3;
+  stroke: #2d2d2d; }
 
 .taskTextOutside0,
 .taskTextOutside2 {
@@ -192,7 +193,7 @@ text > tspan {
 .active1,
 .active2,
 .active3 {
-  fill: #81B1DB;
+  fill: #9cbadd;
   stroke: rgba(255, 255, 255, 0.5); }
 
 .activeText0,
@@ -220,23 +221,23 @@ text > tspan {
 .crit2,
 .crit3 {
   stroke: #E83737;
-  fill: #E83737;
+  fill: #f2777a;
   stroke-width: 2; }
 
 .activeCrit0,
 .activeCrit1,
 .activeCrit2,
 .activeCrit3 {
-  stroke: #E83737;
-  fill: #81B1DB;
+  stroke: #f2777a;
+  fill: #9cbadd;
   stroke-width: 2; }
 
 .doneCrit0,
 .doneCrit1,
 .doneCrit2,
 .doneCrit3 {
-  stroke: #E83737;
-  fill: lightgrey;
+  stroke: #f2777a;
+  fill: #9a9a9a;
   stroke-width: 1;
   cursor: pointer;
   shape-rendering: crispEdges; }
@@ -263,7 +264,7 @@ text > tspan {
 
 */
 .node text {
-  font-family: 'trebuchet ms', verdana, arial;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 14px; }
 
 div.mermaidTooltip {
@@ -271,7 +272,7 @@ div.mermaidTooltip {
   text-align: center;
   max-width: 200px;
   padding: 2px;
-  font-family: 'trebuchet ms', verdana, arial;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 12px;
   background: #6D6D65;
   border: 1px solid rgba(255, 255, 255, 0.25);

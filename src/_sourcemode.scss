@@ -1,9 +1,11 @@
-// Sourcemode by Jeffrey Summers obscuredetour 
-@charset "UTF-8";
-/* CSS Document */
+/*
+  Colors based on New Moon syntax (url)
+  Adapated by Jeffrey Summers
+*/
+@import "variables";
 
 .cm-s-typora-default .cm-header {
-    color: hsl(310, 57%, 46%);
+    color: $variable;
 }
 
 .CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
@@ -11,16 +13,23 @@
 }
 
 .cm-s-typora-default .cm-comment {
-    color: hsl(210, 7%, 70%);
+    color: $comment;
+}
+
+.cm-s-typora-default .cm-tag {
+    color: $tag;
 }
 
 .cm-s-typora-default .cm-string {
-    color: hsl(118, 85%, 79%)
+    color: $keyword;
 }
 
-.cm-s-typora-default .cm-atom,
+.cm-s-typora-default .cm-atom {
+    color: $constant;
+}
+
 .cm-s-typora-default .cm-number {
-    color: hsl(0, 0%, 57%);
+    color: $number;
 }
 
 .typora-node .file-list-item-parent-loc,
@@ -34,6 +43,10 @@
 }
 
 .cm-s-typora-default .cm-link ~ .cm-link {
+    color: hsl(36, 78%, 68%);
+}
+.cm-s-typora-default .cm-link + .cm-string + .cm-link {
+    color: $string;
     color: hsl(209, 79%, 68%);
 }
 
@@ -49,5 +62,5 @@
 }
 
 .cm-s-typora-default .cm-property {
-    color: hsl(350, 51%, 52%);
+    color: $support;
 }

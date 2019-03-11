@@ -1,19 +1,27 @@
-/* CSS Document */
+/*
+  Colors based on New Moon syntax (url)
+  Adapated by Jeffrey Summers
+*/
 .cm-s-typora-default .cm-header {
-  color: #b832a2; }
+  color: #f2777a; }
 
 .CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
   border-left: 3px solid #b8bfc6; }
 
 .cm-s-typora-default .cm-comment {
-  color: #adb3b8; }
+  color: #777c85; }
+
+.cm-s-typora-default .cm-tag {
+  color: #6AB0F3; }
 
 .cm-s-typora-default .cm-string {
-  color: #9ff79c; }
+  color: #ffeea6; }
 
-.cm-s-typora-default .cm-atom,
+.cm-s-typora-default .cm-atom {
+  color: #76d4d6; }
+
 .cm-s-typora-default .cm-number {
-  color: #919191; }
+  color: #fca369; }
 
 .typora-node .file-list-item-parent-loc,
 .typora-node .file-list-item-time,
@@ -24,6 +32,10 @@
   color: #edba6e; }
 
 .cm-s-typora-default .cm-link ~ .cm-link {
+  color: #edba6e; }
+
+.cm-s-typora-default .cm-link + .cm-string + .cm-link {
+  color: #92d192;
   color: #6db0ee; }
 
 .cm-s-typora-default .CodeMirror-activeline-background {
@@ -36,4 +48,4 @@
   color: #999999; }
 
 .cm-s-typora-default .cm-property {
-  color: #c3465b; }
+  color: #e1a6f2; }
